@@ -31,7 +31,7 @@ class UrlMatchingTest {
     }
 
     @Nested
-    @DisplayName("When we we want to compare the full URL")
+    @DisplayName("When we want to compare the full URL")
     class WhenWeWantToCompareFullUrl {
 
         @Test
