@@ -37,7 +37,7 @@ class JsonRequestBodyMatchingTest {
     class WhenWeWantToEnsureThatActualBodyIsEqualToExpectedBody {
 
         @Nested
-        @DisplayName("When we ignore additional attributes and array ordering")
+        @DisplayName("When we don't ignore additional attributes and array ordering")
         class WhenWeIgnoreAdditionalAttributesAndArrayOrdering {
 
             @Test
