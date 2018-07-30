@@ -217,8 +217,6 @@ class HttpResponseBodyTest {
         }
     }
 
-
-
     private String buildApiMethodUrl() {
         return String.format("http://localhost:%d/api/message", this.wireMockServer.port());
     }
