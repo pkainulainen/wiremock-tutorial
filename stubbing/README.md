@@ -1,7 +1,7 @@
 # WireMock Tutorial - Stubbing
 
-This example demonstrates how you can stub HTTP requests send
-to a remote REST API.
+This example demonstrates how you can stub HTTP requests with
+WireMock.
 
 ## Running Tests
 

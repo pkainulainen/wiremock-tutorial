@@ -7,7 +7,7 @@
     <name>WireMock Tutorial: Stubbing</name>
     <description>
         This example demonstrates how you can stub HTTP requests
-	with WireMock.
+	    with WireMock.
     </description>
 
     <properties>
