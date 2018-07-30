@@ -17,8 +17,8 @@ import static org.assertj.core.api.Assertions.catchThrowable;
  * This class demonstrates how we can configure the returned HTTP status code
  * and message.
  */
-@DisplayName("Configure the returned HTTP status")
-class HttpStatusTest {
+@DisplayName("Configure the returned HTTP status code")
+class HttpStatusCodeTest {
 
     private RestTemplate restTemplate;
     private WireMockServer wireMockServer;
