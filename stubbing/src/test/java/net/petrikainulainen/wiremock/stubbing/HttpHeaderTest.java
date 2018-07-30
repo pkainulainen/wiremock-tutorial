@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * This class demonstrates how we can configure the HTTP headers
  * of the returned HTTP response
  */
-@DisplayName("Configure the body of the returned HTTP response")
+@DisplayName("Configure the returned HTTP headers")
 class HttpHeaderTest {
 
     private RestTemplate restTemplate;
