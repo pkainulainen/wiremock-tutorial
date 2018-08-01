@@ -36,8 +36,8 @@ class RedirectTest {
     class WhenWeCreatePermanentRedirect {
 
         @Test
-        @DisplayName("Should return a permanent redirect")
-        void shouldReturnPermanentRedirect() {
+        @DisplayName("Should issue a permanent redirect")
+        void shouldIssuePermanentRedirect() {
             givenThat(get(urlEqualTo("/api/message")).willReturn(
                     permanentRedirect("https://www.testwithspring.com")
             ));
@@ -54,8 +54,8 @@ class RedirectTest {
     class WhenWeCreateTemporaryRedirect {
 
         @Test
-        @DisplayName("Should return a temporary redirect")
-        void shouldReturnTemporaryRedirect() {
+        @DisplayName("Should issue a temporary redirect")
+        void shouldIssueTemporaryRedirect() {
             givenThat(get(urlEqualTo("/api/message")).willReturn(
                     temporaryRedirect("https://www.testwithspring.com")
             ));
@@ -72,8 +72,8 @@ class RedirectTest {
     class WhenWeCreateSeeOtherRedirect {
 
         @Test
-        @DisplayName("Should return a see other redirect")
-        void shouldReturnSeeOtherRedirect() {
+        @DisplayName("Should issue a see other redirect")
+        void shouldIssueSeeOtherRedirect() {
             givenThat(get(urlEqualTo("/api/message")).willReturn(
                     seeOther("https://www.testwithspring.com")
             ));

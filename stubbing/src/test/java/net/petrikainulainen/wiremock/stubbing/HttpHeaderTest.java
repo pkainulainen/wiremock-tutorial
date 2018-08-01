@@ -39,7 +39,7 @@ class HttpHeaderTest {
 
         @Test
         @DisplayName("Should return the configured HTTP header")
-        void shouldReturnHttpStatusCodeOk() {
+        void shouldReturnConfiguredHttpHeader() {
             givenThat(get(urlEqualTo("/api/message")).willReturn(aResponse()
                     .withStatus(200)
                     .withHeader("Name", "Petri Kainulainen")
@@ -62,7 +62,7 @@ class HttpHeaderTest {
 
             @Test
             @DisplayName("Should return the configured HTTP headers")
-            void shouldReturnHttpStatusCodeOk() {
+            void shouldReturnConfiguredHttpHeaders() {
                 givenThat(get(urlEqualTo("/api/message")).willReturn(aResponse()
                         .withStatus(200)
                         .withHeader("Name", "Petri Kainulainen")
@@ -83,7 +83,7 @@ class HttpHeaderTest {
 
             @Test
             @DisplayName("Should return the configured HTTP headers")
-            void shouldReturnHttpStatusCodeOk() {
+            void shouldReturnConfiguredHttpHeaders() {
                 HttpHeaders headers = new HttpHeaders(new HttpHeader("Name", "Petri Kainulainen"),
                         new HttpHeader("Occupation", "Software Developer")
                 );
